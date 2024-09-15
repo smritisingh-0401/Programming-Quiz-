@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Quiz_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P-Quiz"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_27sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/QueNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_32sdp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/totalQueNo" />
+
+            <TextView
+                android:id="@+id/totalQueNo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_150sdp"
+                android:text="/10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                tools:layout_editor_absoluteY="@dimen/_12sdp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/QuestionCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/item_bg"
+            android:padding="@dimen/_8sdp"
+            android:text="Let x be an integer which can take a value of 0 or 1. The statement if(x = =0) x = 1; else x = 0; is equivalent to which one of the following?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Option1Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/sub_item_bg"
+            android:padding="@dimen/_8sdp"
+            android:text="x = 1 + x;"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Option2Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/sub_item_bg"
+            android:padding="@dimen/_8sdp"
+            android:text="x = 1 - x;"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Option3Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/sub_item_bg"
+            android:padding="@dimen/_8sdp"
+            android:text="x = x - 1;"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Option4Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/sub_item_bg"
+            android:padding="@dimen/_8sdp"
+            android:text="x = 1 % x;"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/disable_bg"
+            android:padding="@dimen/_8sdp"
+            android:text="NEXT"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
